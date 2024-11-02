@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/bootstrap/assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/dashboard/dashboard.css">
+</head>
+
+<body>
+    <header class="navbar sticky-top bg-primary flex-md-nowrap p-0 shadow">
+        <a href="#" class="navbar-brand text-white col-md-3 col-lg-2 px-3 fs-6">MyUNPAM</a>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Start Sidebar -->
+            <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+                <div class="offcanvas-md offcanvas-end bg-body-tertiary">
+                    <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="ArdhyaUTS.html" class="nav-link d-flex align-items-center gap-2">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link d-flex align-items-center gap-2">MENU KARYAWAN</p>
+                            </li>
+                            <li class="nav-item">
+                                <a href="karyawan.html" class="nav-link d-flex align-items-center gap-2">Karyawan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="jabatan.html" class="nav-link d-flex align-items-center gap-2">Jabatan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="divisi.html" class="nav-link d-flex align-items-center gap-2">Divisi</a>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link d-flex align-items-center gap-2">MENU ABSENSI</p>
+                            </li>
+                            <li class="nav-item">
+                                <a href="absensi.html" class="nav-link d-flex align-items-center gap-2">Absensi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="izin.html" class="nav-link d-flex align-items-center gap-2">Izin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="lembur.html" class="nav-link d-flex align-items-center gap-2">Lembur</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Sidebar -->
+
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10">
+
+                <h4>Dashboard</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <h4 class="card-header">Data Karyawan</h3>
+                                <div class="card-body">
+                                    <div class="btn-toolbar mb-2 mb-md-0">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">
+                                            Tambah Data Karyawan
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                                                            Tambah Data Karyawan
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label for="formGroupExampleInput"
+                                                                    class="form-label">Nama Lengkap
+                                                                </label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="formGroupExampleInput2"
+                                                                    class="form-label">Jenis Kelamin
+                                                                </label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput2">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="formGroupExampleInput3"
+                                                                    class="form-label">Email</label>
+                                                                <input type="email" class="form-control"
+                                                                    id="formGroupExampleInput3">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="formGroupExampleInput3"
+                                                                    class="form-label">No HP</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput3">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="formGroupExampleInput3"
+                                                                    class="form-label">Alamat</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput3">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="formGroupExampleInput3"
+                                                                    class="form-label">Password</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="formGroupExampleInput3">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="formGroupExampleInput3"
+                                                                    class="form-label">Jabatan</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput3">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="formGroupExampleInput3"
+                                                                    class="form-label">Divisi</label>
+                                                                <input type="text" class="form-control"
+                                                                    id="formGroupExampleInput3">
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-dismiss="modal">Batal</button>
+                                                        <button type="button" class="btn btn-success">Simpan</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>No</th>
+                                                    <th>Kode</th>
+                                                    <th>Nama</th>
+                                                    <th>Email</th>
+                                                    <th>Alamat</th>
+                                                    <th>Jabatan</th>
+                                                    <th>Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>K001</td>
+                                                    <td>Yofan Fiqri</td>
+                                                    <td>yf@gmail.com</td>
+                                                    <td>Jl. Percettakan<br> Negara No.45,<br> Gang J, Rt<br> 001/009<br>
+                                                        Cempaka Putih
+                                                    </td>
+                                                    <td>Staff</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-outline-success">Edit</a>
+                                                        <a href="#" class="btn btn-outline-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>K002</td>
+                                                    <td>Renate<br> Nindya</td>
+                                                    <td>rennindyaa@gmail.com</td>
+                                                    <td>Solo</td>
+                                                    <td>Kepala<br> Bagian</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-outline-success">Edit</a>
+                                                        <a href="#" class="btn btn-outline-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>K003</td>
+                                                    <td>Nurachman</td>
+                                                    <td>nurachman@gmail.com</td>
+                                                    <td>Parung</td>
+                                                    <td></td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-outline-success">Edit</a>
+                                                        <a href="#" class="btn btn-outline-danger">Delete</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
